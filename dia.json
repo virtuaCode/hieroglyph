@@ -1,0 +1,55 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "mark": {
+        "type": "bar"
+    },
+    "data": {
+        "url": "https://gist.githubusercontent.com/virtuaCode/c8badbc6b4a36281927dabe8390adb64/raw/be68ad1a858e753120567e953b361c8f033aa9b0/stats.csv",
+        "format": {
+            "type": "csv"
+        }
+    },
+    "encoding": {
+        "x": {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Anzahl"
+        },
+        "y": {
+            "field": "hierglyph",
+            "type": "nominal",
+            "title": "Hieroglyphen",
+            "scale": {
+                "paddingInner": 0.1,
+                "paddingOuter": 0,
+                "rangeStep": 4
+            },
+            "axis": {
+                "labels": false
+            },
+            "sort": {
+                "encoding": "x",
+                "order": "ascending"
+            }
+        }
+    },
+    "width": 954,
+    "title": "Hieroglyphen-Histogram (Sortiert)",
+    "autosize": {
+        "type": "fit-x",
+        "contains": "padding"
+    },
+    "config": {
+        "axis": {
+            "labelFontSize": 23.400000000000002,
+            "titleFontSize": 26
+        },
+        "legend": {
+            "labelFontSize": 23.400000000000002,
+            "titleFontSize": 26
+        },
+        "title": {
+            "fontSize": 26
+        }
+    }
+}
