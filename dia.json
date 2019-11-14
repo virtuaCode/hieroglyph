@@ -10,12 +10,12 @@
         }
     },
     "encoding": {
-        "x": {
+        "y": {
             "field": "count",
             "type": "quantitative",
             "title": "Anzahl"
         },
-        "y": {
+        "x": {
             "field": "hierglyph",
             "type": "nominal",
             "title": "Hieroglyphen",
@@ -28,8 +28,8 @@
                 "labels": false
             },
             "sort": {
-                "encoding": "x",
-                "order": "ascending"
+                "encoding": "y",
+                "order": "descending"
             }
         }
     },
